@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div id="oprosnoi_list">
+    <div class="container">
+        <div class="row">
+            <div class="text-centered">
+                <h1 class="text-center">Опросные листы для заказа котельных разных типов</h1>
+                <hr>
+                <h2 class="text-center">Пожалуйста, заполните поля, приведенные в документе, для рассмотрения заказа</h2>
+                <h2 class="text-center">Опросные листы представлены ниже, после заполненения, пожалуйста, высылайте на электронный адрес:</h2>
+                    <br>
+                    <h2 class="tilt1 text-center">ekas_group@mail.ru</h2>
+                <br><br>
+                <hr>
+                <br><br>
+                <div class="col-md-3 container_opros tilt">
+                    <a href="../../static/Docx/otopitelnaa_vodogreinaa.doc" target='_blank' title="Нажмите здесь, чтобы открыть документ">
+                        <img src="{% static 'img/oprosniki/otopitelnaa_vodogreinaa.jpg' %}" alt="">
+                    </a>
+                    <h2>Опросный лист для заказа отопительной котельной</h2>
+                </div>
+                <div class="col-md-3 container_opros tilt">
+                    <a href="../../static/Docx/kombinirovanaa.doc" target='_blank' title="Нажмите здесь, чтобы открыть документ">
+                        <img src="{% static 'img/oprosniki/kombinirovanaa.jpg' %}" alt="">
+                    </a>
+                    <h2>Опросный лист для заказа комбинированной котельной</h2>
+                </div>
+                <div class="col-md-3 container_opros tilt">
+                    <a href="../../static/Docx/parovaa.doc" target='_blank' title="Нажмите здесь, чтобы открыть документ">
+                        <img src="{% static 'img/oprosniki/parovaa.jpg' %}" alt="">
+                    </a>
+                    <h2>Опросный лист для заказа паровой котельной</h2>
+                </div>
+                <div class="col-md-3 container_opros tilt">
+                    <a href="../../static/Docx/parovaa_variant_2.doc" target='_blank' title="Нажмите здесь, чтобы открыть документ">
+                        <img src="{% static 'img/oprosniki/parovaa_variant_2.jpg' %}" alt="">
+                    </a>
+                    <h2>Опросный лист для заказа паровой котельной (вариант №2)</h2>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+</div>
+
+{% endblock %}

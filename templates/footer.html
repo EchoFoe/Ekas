@@ -1,0 +1,80 @@
+<div id="foo">
+    <div class="container">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                   <h3><a href="#" data-toggle="modal" data-target="#privacy_policy_modal">
+                    Политика конфиденциальности</a></h3>
+                </div>
+                <hr>
+                <div class="col-md-4">
+                    <h1> <span class="glyphicon glyphicon-phone-alt"></span> Номера телефонов для связи :</h1>
+                        <p>
+                            <p class="text"> (4712) 536-544, (4712) 530-165, (4712) 545-804</p>
+                        </p>
+                    <hr>
+                    <h1> <span class="glyphicon glyphicon-envelope"></span> Наш e-mail :</h1>
+                        <p>
+                            <p class="text">ekas_group@mail.ru</p>
+                        </p>
+                    <hr>
+                    <h1> <span class="glyphicon glyphicon-globe"></span> Наше местонахождение:
+                        <p class="text">
+                        Российская Федерация, Курская обл., почтовый индекс: 305004, г. Курск, ул. Карла Маркса, д.23</p>
+                    </h1>
+                </div>
+
+                <div class="col-md-4">
+                    <h1>Спектр наших услуг :</h1>
+                    <hr>
+                    <p>Группа компаний «ЭКАС» выполняет работы по проектированию, монтажу, строительству,
+                        поставке блок-модульных, крышных, производственных, отопительных котельных,
+                        оказывает услуги по обслуживанию, пуско - наладочным работам теплотехнического
+                        и газоиспользующего оборудования, строительству наружных и внутренних газопроводов,
+                        тепловых сетей, сетей водопровода, канализаций, проводит экспертизу промышленной
+                        безопасности технических устройств, зданий и сооружений.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h1 class="text-center">Подпишитесь на нас:</h1>
+                    <hr>
+                    <form action="" method="post" class="form-check-inline text-center">{% csrf_token %}
+                        <div class="form-group">
+                            <label>Ваш e-mail: </label>
+                            <input  type="email" name="{{ form.email.name }}"placeholder="Enter your e-mail..."
+                                 class="form-control text-center">
+                        </div>
+                        <div class="form-group">
+                            <label>Ваше имя: </label>
+                            <input name="{{ form.name.name }}"placeholder="Enter your name..."
+                                class="form-control text-center">
+                        </div>
+                        <div class="tilt">
+                            <button type="submit" class="btn btn-primary btn-orange">Отправить
+                             <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+                <div class="row centered">
+                    <a href="#"><i class="fa fa-twitter tilt"></i></a>
+                    <a href="#"><i class="fa fa-facebook tilt"></i></a>
+                    <a href="https://vk.com/club101457346"><i class="fa fa-vk tilt"></i></a>
+                </div>
+            <hr>
+        </div>
+
+        <div class="container">
+            <div class="row right">
+                    <div class="pull-right">
+                        <p1> Copyright © 2018, Ekas. All rights reserved. Made by Echo.</p1>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+

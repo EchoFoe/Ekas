@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekas</title>
+    <link rel="shortcut icon" href="../static/img/Ekas.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/animate.css">
+    <link rel="shortcut icon" href="../static/img/Ekas.ico">
+
+
+</head>
+<body>
+
+<div id="top"></div>
+    <div class="wrapper">
+        <div class ="wrapper-content">
+            {% include 'navbar.html' %}
+{#            {% include 'errors_notification.html' %}#}
+            {% block content %}
+            {% endblock content %}
+            {% include 'footer.html' %}
+{#            {% block js_stuff %}#}
+{#            {% endblock js_stuff %}#}
+{#            {% block js_stuff1 %}#}
+{#            {% endblock js_stuff1 %}#}
+        </div>
+    </div>
+
+    {% include 'modal_windows/pp.html' %}
+    {% include 'modal_windows/BMKObjects.html' %}
+    {% include 'modal_windows/EkspertizaObjects.html' %}
+
+<div id="message"><a href="#top"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a></div>
+
+
+<script src="../static/js/jquery-3.2.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/scripts.js"></script>
+<script src="../static/js/npm.js"></script>
+
+
+</body>
+</html>

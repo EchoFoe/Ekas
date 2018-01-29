@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div id="BMK1">
+    <div class="container opisanie">
+        <div class="row centered">
+            <br><br>
+            <div class="col-lg-8 col-lg-offset-2">
+                <h4 class="BMKIN1">Одним из основных направлений в нашей работе является производство блочно-модульных
+                    котельных (БМК) мощностью от 0.1 до 100 МВт, работающих на всех возможных видах топлива.</h4>
+                <br><br><br>
+                <hr>
+                <p class="BMKIN2">Транспортабельные котельные установки (ТКУ) модульного типа предназначены для теплоснабжения жилых,
+                    производственных и административных зданий с системами отопления и горячего водоснабжения и
+                    могут использоваться без постоянного присутствия обслуживающего персонала.
+                </p>
+                <p class="BMKIN3">ТКУ представляют собой технологическую конструкцию,
+                    состоящую из одного и более функциональных блоков (модулей), которые при поставке
+                    Заказчику и последующей сборке образуют готовую к эксплуатации производственную мощность.
+                    Эта конструкция включает в себя все необходимые элементы для подключения к коммуникационным
+                    сетям и собирается нашей бригадой монтажников на территории заказчика.</p>
+                <p class="BMKIN4">В настоящее время котельные установки ТКУ изготавливаются с современным, качественным и
+                    высоконадежным оборудованием, обеспечивающим длительную и безопасную эксплуатацию,
+                    быстроту и удобство обслуживания.</p>
+                <hr><br><br>
+                <div class="tilt">
+                    <h3 class="BMKIN5" data-toggle="modal" data-target="#bmk_objects_modal"
+                        title="Нажмите, что открыть список"> Список произведенных и поставленных на объекты БМК
+                    </h3>
+                </div>
+                <p><br><br></p>
+            </div>
+            <br><br>
+        </div>
+    </div>
+</div>
+
+<div id="oprosnoi_list">
+    <div class="container">
+        <div class="row">
+            <div class="text-centered">
+                <h1 class="text-center">Опросные листы для заказа котельных различных типов</h1>
+                <br>
+                <hr>
+                <h2 class="text-center">Для того чтобы рассчитать стоимость комплекса необходимых услуг или преобрести котельную под ключ, заполните опросный лист.</h2>
+                <h2 class="text-center">Опросные листы представлены ниже.</h2>
+                <h2><i class="fa fa-envelope-o" aria-hidden="true"></i> После заполненения, пожалуйста, высылайте на электронный адрес:</h2>
+                    <br>
+                    <h2 class="tilt1 text-center">ekas_group@mail.ru</h2>
+                <br><br>
+                <hr>
+                <br><br>
+                <div class="col-md-3 container_opros tilt">
+                    <a href="../../static/Docx/otopitelnaa_vodogreinaa.doc" target='_blank' title="Нажмите здесь, чтобы открыть документ">
+                        <img src="{% static 'img/oprosniki/otopitelnaa_vodogreinaa.jpg' %}" alt="">
+                    </a>
+                    <h2><i class="fa fa-file-word-o" aria-hidden="true"></i> Опросный лист для заказа отопительной котельной</h2>
+                </div>
+                <div class="col-md-3 container_opros tilt">
+                    <a href="../../static/Docx/kombinirovanaa.doc" target='_blank' title="Нажмите здесь, чтобы открыть документ">
+                        <img src="{% static 'img/oprosniki/kombinirovanaa.jpg' %}" alt="">
+                    </a>
+                    <h2><i class="fa fa-file-word-o" aria-hidden="true"></i> Опросный лист для заказа комбинированной котельной</h2>
+                </div>
+                <div class="col-md-3 container_opros tilt">
+                    <a href="../../static/Docx/parovaa.doc" target='_blank' title="Нажмите здесь, чтобы открыть документ">
+                        <img src="{% static 'img/oprosniki/parovaa.jpg' %}" alt="">
+                    </a>
+                    <h2><i class="fa fa-file-word-o" aria-hidden="true"></i> Опросный лист для заказа паровой котельной</h2>
+                </div>
+                <div class="col-md-3 container_opros tilt">
+                    <a href="../../static/Docx/parovaa_variant_2.doc" target='_blank' title="Нажмите здесь, чтобы открыть документ">
+                        <img src="{% static 'img/oprosniki/parovaa_variant_2.jpg' %}" alt="">
+                    </a>
+                    <h2><i class="fa fa-file-word-o" aria-hidden="true"></i> Опросный лист для заказа паровой котельной (вариант №2)</h2>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+</div>
+
+<div id="oprosnoi_list_proektirovanie">
+    <div class="container">
+        <div class="row">
+            <div class="text-centered">
+                <h1 class="text-center">Исходно-разрешительная документация</h1>
+                <br>
+                <hr>
+                <div class="container proekti">
+                    <br><br><br>
+                    <div class="col-md-6 container_opros_proekti tilt">
+                        <a target='_blank' title="">
+                            <img src="{% static 'img/bmk_ekas_sv/bmk_sv_1.jpg' %}" alt="">
+                        </a>
+                        <h2>Заключение ЭПБ</h2>
+                    </div>
+                    <div class="col-md-6 container_opros_proekti tilt">
+                        <a target='_blank' title="">
+                            <img src="{% static 'img/bmk_ekas_sv/bmk_sv_2.jpg' %}" alt="">
+                        </a>
+                        <h2>Реестр БМК ЭКАС</h2>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            <br><br>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

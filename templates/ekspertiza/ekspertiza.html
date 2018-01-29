@@ -1,0 +1,293 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div id="eks1">
+    <div class="container opisanie">
+        <div class="row centered">
+            <br><br>
+            <div class="col-lg-8 col-lg-offset-2">
+                <h4 class="eks1IN1">Наша компания оказывает услуги по проведению экспертизы промышленной безопасности на опасных
+                    производственных объектах в соответствии с требованиями Федерального закона
+                    «О промышленной безопасности опасных производственных объектов»
+                    (лицензия № ДЭ-00-008736 от 26 мая 2008 г, переоформлена на основании решения лицензирующего
+                    органа - приказа от 26 июля 2016 года №622-лп).</h4>
+                <br><br><br>
+                <hr>
+                <p class="eks1IN2">Для оценки фактического состояния зданий и сооружений в ходе проведения экспертизы промышленной
+                    безопасности наша организация имеет допуск
+                    СРО П-089-15122009 от 07 ноября 2011 года НП «Саморегулируемая организация «Объединение
+                    проектировщиков города Курска и Курской области» (работы по обследованию строительных
+                    конструкций зданий и сооружений).
+                </p>
+                <p class="eks1IN3">В целях проведения технического диагностирования технических устройств в ходе проведения экспертизы
+                промышленной безопасности имеется собственная лаборатория неразрушающего контроля
+                (Лаборатория металлов и сварки» Свидетельство об аттестации № 64А030561 от 24.06.2015 г.).
+                Для выполнения работ в штате компании имеются эксперты промышленной безопасности,
+                аттестованные в соответствии с Постановлением Правительства РФ от 28 мая 2015 года
+                №509 «Об аттестации экспертов в области промышленной безопасности».</p>
+                <p class="eks1IN4">Области аттестации: Э12 ТУ, Э8 ТУ, Э7 ЗС, Э8 ЗС, Э9 ЗС, Э10 ЗС, Э11 ЗС, Э12 ЗС, Э14 ЗС, Э15 ЗС
+                (Перечень областей аттестации экспертов в области промышленной безопасности
+                (приказ Ростехнадзора «Об утверждении перечня областей аттестации экспертов в области
+                промышленной безопасности от 9 сентября 2015 г. № 355)).</p>
+                <hr><br><br>
+                <div class="tilt">
+                    <h3 class="eks1IN5" data-toggle="modal" data-target="#ekspertiza_objects_modal"
+                        title="Нажмите, что открыть список"> Список выполненных объектов по ЭПБ
+                    </h3>
+                </div>
+                <p><br><br></p>
+            </div>
+            <br><br>
+        </div>
+    </div>
+</div>
+
+
+<div class="carousel fade-carouselx slide" data-ride="carousel" data-interval="5000"
+             id="bs-carouselx">
+
+        <div class="overlay"></div>
+
+        <ol class="carousel-indicators">
+            <li data-target="#bs-carouselx" data-slide-to="0" class="active"></li>
+            <li data-target="#bs-carouselx" data-slide-to="1"></li>
+            <li data-target="#bs-carouselx" data-slide-to="2"></li>
+            <li data-target="#bs-carouselx" data-slide-to="3"></li>
+            <li data-target="#bs-carouselx" data-slide-to="4"></li>
+            <li data-target="#bs-carouselx" data-slide-to="5"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item slides active">
+                <div class="slide-1"></div>
+                    <div class="hero">
+                        <hgroup>
+                            <h1>ЭПБ производственных зданий</h1>
+                        </hgroup>
+                    </div>
+            </div>
+
+            <div class="item slides">
+                <div class="slide-2"></div>
+                    <div class="hero">
+                        <hgroup>
+                            <h1>ЭПБ кирпичных дымовых труб</h1>
+                        </hgroup>
+                    </div>
+            </div>
+
+            <div class="item slides">
+                <div class="slide-3"></div>
+                    <div class="hero">
+                        <hgroup>
+                            <h1>ЭПБ металлических дымовых труб</h1>
+                        </hgroup>
+                    </div>
+            </div>
+
+            <div class="item slides">
+                <div class="slide-4"></div>
+                    <div class="hero">
+                        <hgroup>
+                            <h1>ЭПБ зданий и сооружений элеваторов</h1>
+                        </hgroup>
+                    </div>
+            </div>
+
+            <div class="item slides">
+                <div class="slide-5"></div>
+                    <div class="hero">
+                        <hgroup>
+                            <h1>ЭПБ зданий котельных</h1>
+                        </hgroup>
+                    </div>
+            </div>
+
+            <div class="item slides">
+                <div class="slide-6"></div>
+                    <div class="hero">
+                        <hgroup>
+                            <h1>ЭПБ железобетонных дымовых труб ТЭЦ</h1>
+                        </hgroup>
+                    </div>
+            </div>
+        </div>
+</div>
+
+<div id="kloklo">
+    <div class="container kloklo">
+        <div class="row">
+            <br><br>
+            <h4 class="centered">Отзывы о наших работах:</h4>
+            <br>
+            <hr>
+            <br>
+            <p class="centered">Чтобы прочитать отзывы, наведите курсор на картинку
+                и полистайте с помощью кнопки</p>
+            <div class="col-lg-6 otziv">
+                <div class="slider tilt3">
+                    <figure class="slider__item"><img class="slider__image"
+                                                      src="../../static/img/otzivi/o1.jpg"/>
+                        <figcaption class="slider__caption"></figcaption>
+                    </figure>
+                    <figure class="slider__item"><img class="slider__image"
+                                                      src="../../static/img/otzivi/o2.jpg"/>
+                        <figcaption class="slider__caption"></figcaption>
+                    </figure>
+                    <figure class="slider__item"><img class="slider__image"
+                                                      src="../../static/img/otzivi/o3.jpg"/>
+                        <figcaption class="slider__caption"></figcaption>
+                    </figure>
+                    <figure class="slider__item"><img class="slider__image"
+                                                      src="../../static/img/otzivi/o4.jpg"/>
+                        <figcaption class="slider__caption"></figcaption>
+                    </figure>
+                    <figure class="slider__item"><img class="slider__image"
+                                                      src="../../static/img/otzivi/o5.jpg"/>
+                        <figcaption class="slider__caption"></figcaption>
+                    </figure>
+                    <figure class="slider__item"><img class="slider__image"
+                                                      src="../../static/img/otzivi/o6.jpg"/>
+                        <figcaption class="slider__caption"></figcaption>
+                    </figure>
+                    <figure class="slider__item"><img class="slider__image"
+                                                      src="../../static/img/otzivi/o7.jpg"/>
+                        <figcaption class="slider__caption"></figcaption>
+                    </figure>
+                    <div class="slider__btn">
+                        <button type="button" class="btn btn-default btn-sm tilt" title="Нажмите, чтобы пролистать">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 otziv">
+                <div class="slider2 tilt3">
+                    <figure class="slider__item2"><img class="slider__image2"
+                                                      src="../../static/img/otzivi/o8.jpg"/>
+                        <figcaption class="slider__caption2"></figcaption>
+                    </figure>
+                    <figure class="slider__item2"><img class="slider__image2"
+                                                      src="../../static/img/otzivi/o9.jpg"/>
+                        <figcaption class="slider__caption2"></figcaption>
+                    </figure>
+                    <figure class="slider__item2"><img class="slider__image2"
+                                                      src="../../static/img/otzivi/o10.jpg"/>
+                        <figcaption class="slider__caption2"></figcaption>
+                    </figure>
+                    <figure class="slider__item2"><img class="slider__image2"
+                                                      src="../../static/img/otzivi/o11.jpg"/>
+                        <figcaption class="slider__caption2"></figcaption>
+                    </figure>
+                    <figure class="slider__item2"><img class="slider__image2"
+                                                      src="../../static/img/otzivi/o12.jpg"/>
+                        <figcaption class="slider__caption2"></figcaption>
+                    </figure>
+                    <figure class="slider__item2"><img class="slider__image2"
+                                                      src="../../static/img/otzivi/o13.jpg"/>
+                        <figcaption class="slider__caption2"></figcaption>
+                    </figure>
+                    <div class="slider__btn2">
+                        <button type="button" class="btn btn-default btn-sm tilt" title="Нажмите, чтобы пролистать">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="oprosnoi_list_ekspertiza">
+    <div class="container">
+        <div class="row">
+            <div class="text-centered">
+                <h1 class="text-center">Исходно-разрешительная документация</h1>
+                <br>
+                <hr>
+                <div class="container licen">
+                        <h1 class="text-center">Лицензия на осуществление деятельности по проведению ЭПБ:</h1>
+                    <br><br><br>
+                    <div class="col-md-4 container_opros_ekspertiza tilt">
+                        <a target='_blank' title="">
+                            <img src="{% static 'img/licen/lic1.jpg' %}" alt="">
+                        </a>
+                        <h2>Лицензия на осуществление деятельности по проведению ЭПБ</h2>
+                    </div>
+                    <div class="col-md-4 container_opros_ekspertiza tilt">
+                        <a target='_blank' title="">
+                            <img src="{% static 'img/licen/lic2.jpg' %}" alt="">
+                        </a>
+                        <h2>Продолжение лицензии</h2>
+                    </div>
+                    <div class="col-md-4 container_opros_ekspertiza tilt">
+                        <a target='_blank' title="">
+                            <img src="{% static 'img/licen/lic3.jpg' %}" alt="">
+                        </a>
+                        <h2>Приложение к лицензии</h2>
+                    </div>
+                </div>
+                <br><br><hr><br>
+                <div class="container lab">
+                    <h1 class="text-center">Свидетельство аттестации лаборатории неразрушающего контроля:</h1>
+                    <br><br><br>
+                    <div class="col-md-4 container_opros_ekspertiza tilt">
+                        <a target='_blank' title="">
+                            <img src="{% static 'img/lab/lab1.jpg' %}" alt="">
+                        </a>
+                        <h2>Свидетельство аттестации лаборатории НК</h2>
+                    </div>
+                    <div class="col-md-4 container_opros_ekspertiza tilt">
+                        <a target='_blank' title="">
+                            <img src="{% static 'img/lab/lab2.jpg' %}" alt="">
+                        </a>
+                        <h2>Приложение к свидетельству</h2>
+                    </div>
+                    <div class="col-md-4 container_opros_ekspertiza tilt">
+                        <a target='_blank' title="">
+                            <img src="{% static 'img/lab/lab3.jpg' %}" alt="">
+                        </a>
+                        <h2>Приложение к свидетельству</h2>
+                    </div>
+                </div>
+                <br><br><hr><br>
+                <div class="container sro">
+                <h1 class="text-center">Свидетельство о допуске к определенному
+                    виду или видам работ по подготовке проектной документации, которые оказывают влияние на безопасность
+                    объектов капитального строительства:</h1>
+                    <br><br><br>
+                    <div class="col-md-3 container_opros_ekspertiza tilt">
+                        <a target='_blank' title="">
+                            <img src="{% static 'img/sro/sro1.jpg' %}" alt="">
+                        </a>
+                        <h2>Свидетельство о внесении в реестр членов СРО НП МОЭЦЧ</h2>
+                    </div>
+                    <div class="col-md-3 container_opros_ekspertiza tilt">
+                        <a target='_blank' title="">
+                            <img src="{% static 'img/sro/sro2.jpg' %}" alt="">
+                        </a>
+                        <h2>Свидетельство о допуске к определенному виду работ</h2>
+                    </div>
+                    <div class="col-md-3 container_opros_ekspertiza tilt">
+                        <a target='_blank' title="">
+                            <img src="{% static 'img/sro/sro3.jpg' %}" alt="">
+                        </a>
+                        <h2>Приложение к свидетельству</h2>
+                    </div>
+                    <div class="col-md-3 container_opros_ekspertiza tilt">
+                        <a target='_blank' title="">
+                            <img src="{% static 'img/sro/sro4.jpg' %}" alt="">
+                        </a>
+                        <h2>Приложение к свидетельству</h2>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <br><br><hr>
+</div>
+
+{% endblock %}

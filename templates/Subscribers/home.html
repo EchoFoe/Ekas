@@ -1,0 +1,370 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div id="headerwrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 tilt">
+                    <h3 class="eco">Экология <i class="fa fa-tree" aria-hidden="true"></i></h3>
+{#                    <a href="{% url 'proektirovanie' %}">#}
+{#                        <h3 class="eco">Проектирование</h3>#}
+{#                    </a>#}
+                    <hr>
+                </div>
+                <div class="col-lg-8 tilt1">
+                    <h3 class="kotel"><i class="fa fa-industry" aria-hidden="true"></i> Котельные</h3>
+{#                    <a href="{% url 'BMK' %}">#}
+{#                        <h3 class="kotel">Котельные</h3>#}
+{#                    </a>#}
+                </div>
+                <div class="col-lg-4 tilt1">
+                    <h1 class="auto"><i class="fa fa-laptop" aria-hidden="true"></i> Автоматика</h1>
+{#                    <a href="{% url 'kipia' %}">#}
+{#                        <h1 class="auto">Автоматика</h1>#}
+{#                    </a>#}
+                    <hr>
+                </div>
+                <div class="col-lg-10 tilt">
+                    <h3 class="servis">Сервис <i class="fa fa-user-circle" aria-hidden="true"></i></h3>
+{#                    <a href="{% url 'ekspertiza' %}">#}
+{#                        <h3 class="servis">Сервис</h3>#}
+{#                    </a>#}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ex1">
+        <div class="container e">
+        <div class="row centered">
+            <br><br>
+            <div class="col-lg-4 eb1">
+                <i class="fa fa-building"></i>
+                <h4>Котельные</h4>
+                <hr>
+                <p>Проектирование, поставка, монтаж и наладка котельных малой и средней мощности, работающих на газообразном, жидком, твердом топливе, блочно-модульных котельных, узлов учета газа, элеваторных узлов системы отопления.
+                Поставка, монтаж и наладка газогорелочных устройств Weisthaupt, Giersch, KroLL, Bentone, Nu-Way, Lamborghini, горелок отечественных производителей ко всем типам паровых и водогрейных котлов.
+                Работы по пуску и режимно-наладочным испытаниям технологического, теплотехнического и газоиспользующего оборудования.
+                </p>
+            </div>
+            <div class="col-lg-4 eb2">
+                <i class="fa fa-microchip"></i>
+                <h4>Автоматика</h4>
+                <hr>
+                <p>Работы по проектированию, монтажу и наладке автоматизированных систем управления работой паровых и водогрейных котлов на базе контроллеров Mitsubishi, Siemens, Shnaider и отечественных производителей («Агава», «МЗТА», «САУ «ОВЕН» и т.д.).
+                Проектирование, поставка, монтаж и наладка систем химической очистки воды, водного режима паровых и водогрейных котлов, в том числе бытового назначения, деаэраторов.
+                </p>
+            </div>
+            <div class="col-lg-4 eb3">
+                <i class="fa fa-user"></i>
+                <h4>Сервис</h4>
+                <hr>
+                <p>Мы всегда готовы предложить консультационные услуги нашего инженерного персонала для разработки технического задания и технических условий на проектирование всех видов котельных. Специалисты проведут технические обследования и диагностику существующих систем котельных, тепловых, насосных пунктов. Само проектирование котельных осуществляется на любой стадии, выполняется составление смет, авторский надзор, экспертиза промышленной безопасности.</p>
+            </div>
+        </div>
+        <br><br>
+        </div>
+    </div>
+
+
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000"
+             id="bs-carousel">
+
+        <div class="overlay"></div>
+
+        <ol class="carousel-indicators">
+            <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bs-carousel" data-slide-to="1"></li>
+            <li data-target="#bs-carousel" data-slide-to="2"></li>
+            <li data-target="#bs-carousel" data-slide-to="3"></li>
+            <li data-target="#bs-carousel" data-slide-to="4"></li>
+            <li data-target="#bs-carousel" data-slide-to="5"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item slides active">
+                <div class="slide-1"></div>
+                    <div class="hero">
+                        <hgroup>
+                            <h1>Оперативность</h1>
+                            <h3>Выполняем все задачи в поставленный срок</h3>
+                        </hgroup>
+{#                    <button class="btn btn-hero btn-lg" role="button">Наши объекты</button>#}
+                    </div>
+            </div>
+
+            <div class="item slides">
+                <div class="slide-2"></div>
+                    <div class="hero">
+                        <hgroup>
+                            <h1>Эффективность</h1>
+                            <h3>Достигаем результатов вне зависимости от сложности поставленной задачи</h3>
+                        </hgroup>
+{#                    <button class="btn btn-hero btn-lg" role="button">Наши объекты</button>#}
+                    </div>
+            </div>
+
+            <div class="item slides">
+                <div class="slide-3"></div>
+                    <div class="hero">
+                        <hgroup>
+                            <h1>Качество</h1>
+                            <h3>В своей деятельности мы приняли для себя «качество» как свою наивысшую ценность</h3>
+                        </hgroup>
+{#                    <button class="btn btn-hero btn-lg" role="button">Наши объекты</button>#}
+                    </div>
+            </div>
+
+            <div class="item slides">
+                <div class="slide-4"></div>
+                    <div class="hero">
+                        <hgroup>
+                            <h1>Опыт и знания</h1>
+                            <h3>Люди - главный актив компании</h3>
+                        </hgroup>
+{#                    <button class="btn btn-hero btn-lg" role="button">Наши объекты</button>#}
+                    </div>
+            </div>
+
+            <div class="item slides">
+                <div class="slide-5"></div>
+                    <div class="hero">
+                        <hgroup>
+                            <h1>Ответственность</h1>
+                            <h3>Ставим цель, разрабатываем стратегию, решаем вопрос и делаем</h3>
+                        </hgroup>
+{#                    <button class="btn btn-hero btn-lg" role="button">Наши объекты</button>#}
+                    </div>
+            </div>
+
+            <div class="item slides">
+                <div class="slide-6"></div>
+                    <div class="hero">
+                        <hgroup>
+                            <h1>Мобильность</h1>
+                            <h3>Готовы и способны к быстрой смене выполняемых производственных заданий</h3>
+                        </hgroup>
+{#                    <button class="btn btn-hero btn-lg" role="button">Наши объекты</button>#}
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="dg">
+        <div class="container">
+            <div class="row">
+                <h4>Основные направления деятельности группы компаний ЭКАС:</h4>
+                <br><br><hr><br><br>
+                <div class="col-sm-6 col-md-6 col-md-offset-0">
+                    <div class="thumbnail">
+                        <img src="{% static 'img/ekspertiza.JPG' %}" alt="...">
+                        <h3>Экспертиза промышленной безопасности (ЭПБ)</h3>
+                        <p>Наша компания оказывает услуги по проведению экспертизы промышленной
+                                безопасности на опасных производственных объектах в соответствии с
+                                требованиями Федерального закона</p>
+                        <hr>
+                        <p><a href="{% url 'ekspertiza' %}" class="btn btn-primary tilt"
+                                  role="button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="thumbnail">
+                        <img src="{% static 'img/ftt1.jpg' %}" alt="...">
+                        <h3>Производство блочно-модульных котельных (БМК) и котлов</h3>
+                        <p>ТКУ представляют собой технологическую конструкцию,
+                            состоящую из одного и более функциональных блоков (модулей)</p>
+                        <hr>
+
+                        <p>
+                        <a href="{% url 'BMK' %}" class="btn btn-primary tilt"
+                                  role="button">Подробнее о котельных</a>
+                            <a href="{% url 'kotli' %}" class="btn btn-primary tilt"
+                                  role="button">Подробнее о котлах</a>
+                        <p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dg1">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 epbleft">
+                    <div class="thumbnail">
+                        <img src="{% static 'img/naladka.jpg' %}" alt="...">
+                        <h3>Пусконаладочные работы</h3>
+                        <p>Мы осуществляем наладку и ввод в эксплуатацию автоматизированных систем
+                            управления работой паровых,водогрейных и комбинированных котлов</p>
+                        <hr>
+                        <p><a href="{% url 'kipia' %}" class="btn btn-primary tilt"
+                                  role="button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 kipiaright">
+                    <div class="thumbnail">
+                        <img src="{% static 'img/seti.jpg' %}" alt="...">
+                        <h3>Проектирование и строительство наружних сетей</h3>
+                        <p>Наша компания оказывает услуги по разработке ТЗ
+                        и ТУ на проектирование всех видов котельных, зданий
+                        и сооружений</p>
+                        <hr>
+                        <p><a href="{% url 'proektirovanie' %}" class="btn btn-primary tilt "
+                                  role="button">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ex2">
+        <div class="container opisanie">
+        <div class="row centered">
+            <br><br>
+            <div class="col-lg-8 col-lg-offset-2 lil1">
+                <h4>Мы проектируем, производим и вводим в эксплуатацию!</h4>
+                <br><br><br>
+                <hr>
+                <p>Группа компаний ЭКАС имеет так же собственную производственную базу, которая позволяет
+                    снизить затраты на заказы наших клиентов, а сотрудничество с нами,
+                    избавит Вас от необходимости переплачивать лишние деньги за посреднические услуги</p>
+                <p><br><br></p>
+            </div>
+            <br><br>
+        </div>
+        </div>
+    </div>
+
+    <div id="parneri">
+        <div class="container">
+            <div class="row center-block">
+                <h4 class="pip"><i class="fa fa-handshake-o" aria-hidden="true"></i> Наши партнеры:</h4>
+                <hr>
+                <div class="col-lg-2 col-lg-offset-1">
+                    <a href="https://www.bosch-climate.ru/">
+                        <img src="{% static 'img/logo/Bosh_logo.jpg' %}" alt="" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="http://www.biasi.su/">
+                        <img src="{% static 'img/logo/Biasi_logo.jpg' %}" alt="" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="http://www.wolfrus.ru/">
+                        <img src="{% static 'img/logo/Wolf_logo.jpg' %}" alt="" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="http://www.booster-rus.ru/">
+                        <img src="{% static 'img/logo/BOOSTER_logo.jpg' %}" alt="" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.viessmann.ru/">
+                        <img src="{% static 'img/logo/Viessmann_logo.jpg' %}" alt="" class="img-responsive">
+                    </a>
+                </div>
+            </div>
+            <br><br>
+            <div class="row center-block">
+                <div class="col-lg-2 col-lg-offset-1">
+                    <a href="https://www.schneider-electric.ru/ru/">
+                        <img src="{% static 'img/logo/schneider_logo.jpg' %}" alt="" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="http://www.mitsubishielectric.com/">
+                        <img src="{% static 'img/logo/Mitsubishi_logo.jpg' %}" alt="" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="http://www.owen.ru/">
+                        <img src="{% static 'img/logo/oven_logo.jpg' %}" alt="" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="http://www.weishaupt.ru/">
+                        <img src="{% static 'img/logo/weishaupt_logo.jpg' %}" alt="" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="http://www.icicaldaie.com/">
+                        <img src="{% static 'img/logo/caldaie_logo.jpg' %}" alt="" class="img-responsive">
+                    </a>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <div id="yo">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h4 class="yoleft">Группа компаний ЭКАС - это разработка качественных проектных решений
+                        и реализация на профессиональном уровне</h4>
+                    <hr>
+                    <br>
+                    <p class="yoright">Ввод в эксплуатацию котельных осуществляется на высококачественном оборудовании,
+                        произведенном ключевыми зарубежными и отечественными компаниями</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<br><br>
+{% endblock %}
+{#    <div id="dg">#}
+{#        <div class="container">#}
+{#            <div class="row centered">#}
+{#                <h4>Основные направления деятельности группы компаний ЭКАС:</h4>#}
+{#                <br><br><hr><br><br>#}
+{#                <div class="col-lg-6 bmkleft">#}
+{#                    <div class="tilt">#}
+{#                        <h4>Производство блочно-модульных котельных (БМК)</h4>#}
+{#                        <a href="{% url 'BMK' %}">#}
+{#                            <img src="{% static 'img/ftt1.JPG' %}" alt=""#}
+{#                                 title="Нажмите, чтобы открыть">#}
+{#                        </a>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-lg-6 proektright">#}
+{#                    <div class="tilt">#}
+{#                        <h4>Проектирование и строительство наружних сетей</h4>#}
+{#                        <a href="{% url 'proektirovanie' %}">#}
+{#                            <img src="{% static 'img/seti.jpg' %}" alt=""#}
+{#                                 title="Нажмите, чтобы открыть">#}
+{#                        </a>#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{##}
+{#    <div id="dg">#}
+{#        <div class="container">#}
+{#            <div class="row centered">#}
+{#                <div class="col-lg-6 epbleft">#}
+{#                    <div class="tilt">#}
+{#                        <h4>Экспертиза промышленной безопасности (ЭПБ)</h4>#}
+{#                        <a href="{% url 'ekspertiza' %}">#}
+{#                            <img src="{% static 'img/ekspertiza.JPG' %}" alt=""#}
+{#                                 title="Нажмите, чтобы открыть">#}
+{#                        </a>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-lg-6 kipiaright">#}
+{#                    <div class="tilt">#}
+{#                        <h4>Пусконаладочные работы и ввод в эксплуатацию</h4>#}
+{#                        <a href="{% url 'kipia' %}">#}
+{#                            <img src="{% static 'img/naladka.jpg' %}" alt=""#}
+{#                                 title="Нажмите, чтобы открыть">#}
+{#                        </a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}

@@ -1,6 +1,6 @@
 DEBUG = False
 ALLOWED_HOSTS = ['159.89.29.210',
-                 '.ekas-group.ru']
+                 '.ekas-org.ru']
 
 
 DATABASES = {

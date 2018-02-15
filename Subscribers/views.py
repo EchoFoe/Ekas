@@ -1,10 +1,21 @@
 from django.shortcuts import *
 from .forms import SubscribersForm
+from django.shortcuts import render
+
 
 def Subscribers(request):
 
     form = SubscribersForm(request.POST or None)
-    return render(request, 'Subscribers/Subscribers.html', locals())
+
+    if request.method == "POST" and form.is_valid():
+        print(request.POST)
+        print(form.cleaned_data)
+        data = form.cleaned_data
+        print(form.cleaned_data["name"])
+        new_form = form.save()
+
+    # return render(request, 'Subscribers/Subscribers.html', locals())
+    return render(request, 'footer.html', locals())
 
 def home(request):
 

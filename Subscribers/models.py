@@ -1,6 +1,6 @@
 from django.db import models
 
-class Subscribers(models.Model):#класс подписчик
+class Subscriber(models.Model):#класс подписчик
     email = models.EmailField()#поле для e-mail
     name = models.CharField(max_length=128)#поле для имени
 
@@ -10,6 +10,3 @@ class Subscribers(models.Model):#класс подписчик
     class Meta:
         verbose_name = 'MySubscriber'
         verbose_name_plural = 'A lot of Subscribers'
-
-
-

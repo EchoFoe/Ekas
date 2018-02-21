@@ -38,17 +38,18 @@
                 </div>
 
                 <div class="col-md-4">
+
                     <h1 class="text-center">Подпишитесь на нас:</h1>
                     <hr>
                     <form action="" method="post" class="form-check-inline text-center">{% csrf_token %}
                         <div class="form-group">
                             <label>Ваш e-mail: </label>
-                            <input  type="email" name="{{ form.email.name }}"placeholder="Enter your e-mail..."
+                            <input  type="email" name="{{ form.email.name}}" placeholder="Enter your e-mail..."
                                  class="form-control text-center">
                         </div>
                         <div class="form-group">
                             <label>Ваше имя: </label>
-                            <input name="{{ form.name.name }}"placeholder="Enter your name..."
+                            <input name="{{ form.name.name }}" placeholder="Enter your name..."
                                 class="form-control text-center">
                         </div>
                         <div class="tilt">

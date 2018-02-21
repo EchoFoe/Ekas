@@ -14,13 +14,13 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from . import views
+from . import views, forms
 from django.conf.urls.static import static
 
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^Subscribers/$', views.Subscribers, name='Subscribers'),
+    url(r'^Subscribers/$', views.Subscriber, name='Subscriber'),
     url(r'^about_us/$', views.about_us, name='about_us'),
     url(r'^doci/$', views.doci, name='doci'),
     url(r'oprosnoi_list/$', views.oprosnoi_list, name='oprosnoi_list'),
@@ -30,4 +30,6 @@ urlpatterns = [
     url(r'kipia/$', views.kipia, name='kipia'),
     url(r'kotli/$', views.kotli, name='kotli'),
     url(r'^$', views.home, name='home'),
+
+    # url(r'templates/$', views.Subscriber, name='templates'),
 ]

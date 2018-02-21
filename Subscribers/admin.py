@@ -1,13 +1,13 @@
 from django.contrib import admin
 from .models import *
 
-class SubscribersAdmin (admin.ModelAdmin):
+class SubscriberAdmin (admin.ModelAdmin):
     # list_display = ["name", "email"]
-    list_display = [field.name for field in Subscribers._meta.fields]
+    list_display = [field.name for field in Subscriber._meta.fields]
     list_filter = ['name',]
     search_fields = ['name', 'email']
 
-    fields = ["email"]
+
 
     # exclude = ["email"]
 	# inlines = [FieldMappingInline]
@@ -17,6 +17,6 @@ class SubscribersAdmin (admin.ModelAdmin):
 	# search_fields = ['category', 'subCategory', 'suggestKeyword']
 
     class Meta:
-        model = Subscribers
+        model = Subscriber
 
-admin.site.register(Subscribers, SubscribersAdmin)
+admin.site.register(Subscriber, SubscriberAdmin)

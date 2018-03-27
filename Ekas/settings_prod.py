@@ -8,7 +8,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'db1',
         'USER': 'ekas-group',
-        'PASSWORD': 'echofoeadmin',
+        'PASSWORD': 's',
         'HOST': 'localhost',
         'PORT': '',
 

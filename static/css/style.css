@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Exo+2');
 
+
 body{
     background-color: #f2f2f2;
     font-family: 'Exo 2', sans-serif;
@@ -818,6 +819,35 @@ position: fixed; /* фиксированная позиция */
     display: inline-block;
 }
 
+#order_forms{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #fff;
+    background-attachment: inherit;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    animation: awan-animasi 25s linear infinite;
+    -ms-animation: awan-animasi 25s linear infinite;
+    -moz-animation: awan-animasi 25s linear infinite;
+    -webkit-animation: awan-animasi 25s linear infinite;
+}
+.container_forms{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-attachment: inherit;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+
+}
 #aboutus2{
     background-color: #f2f2f2;
     padding-bottom: 10px;
@@ -1229,4 +1259,37 @@ img {
     font-size: 25px;
     color: rgba(0, 0, 0, 0.91);
     cursor: default;
+}
+
+.product-description-tabs{
+    padding: 10px;
+}
+/*Стили секции для продукта*/
+.product-item{
+    height: 500px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*Стили для секции для картинки*/
+.product-image-item{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+/*Стили для контейнера-продуктов*/
+.container-product{
+    margin: 100px;
+}
+
+/*Стили кнопки добавить в корзину*/
+.add-to-cart-btn{
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
 }

@@ -1,6 +1,6 @@
 DEBUG = False
-ALLOWED_HOSTS = ['159.89.29.210',
-                 'ekas-org.ru']
+ALLOWED_HOSTS = ['138.197.181.89',
+                 '.ekas-org.ru']
 
 
 DATABASES = {

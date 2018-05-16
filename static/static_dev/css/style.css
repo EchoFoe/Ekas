@@ -185,6 +185,17 @@ hr{
     font-size: 30px;
 }
 
+#dg_product{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+#dg_product h4{
+    font-size: 30px;
+}
+
+
 .opisanie h4{
     font-size: 35px;
     color: #fffdf8;
@@ -273,6 +284,18 @@ hr{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#apartments{
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 #parneri h4{
     font-size: 45px;
@@ -661,6 +684,22 @@ position: fixed; /* фиксированная позиция */
     -moz-transform: scale(1.2, 1.2);
     -ms-transform: scale(1.2, 1.2);
         transform: scale(1.2, 1.2);
+}
+
+.tilt2{
+    -webkit-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+        transition: all 2s ease;
+}
+
+.tilt2:hover{
+    -webkit-transform: scale(1.08, 1.08);
+    -o-transform: scale(1.08, 1.08);
+    -moz-transform: scale(1.08, 1.08);
+    -ms-transform: scale(1.08, 1.08);
+        transform: scale(1.08, 1.08);
 }
 
 .tilt3{
@@ -1229,4 +1268,55 @@ img {
     font-size: 25px;
     color: rgba(0, 0, 0, 0.91);
     cursor: default;
+}
+
+.product-description-tabs{
+    padding: 10px;
+}
+/*Стили секции для продукта*/
+.product-item{
+    /*height: 800px;*/
+    /*background-color: white;*/
+    /*border: 2px solid black;*/
+    /*border-radius: 15px;*/
+    /*position: relative;*/
+    /*padding: 10px 0 20px 0;*/
+    /*text-align: center;*/
+    /*margin-bottom: 30px;*/
+    display: block;
+    padding: 6px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.71);
+    border-radius: 10px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+/*Стили для секции для картинки*/
+.product-image-item{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+/*Стили для контейнера-продуктов*/
+.container-product{
+    margin: 100px;
+}
+
+/*!*Стили кнопки добавить в корзину*!*/
+/*.add-to-cart-btn{*/
+    /*position: absolute;*/
+    /*bottom: 15px;*/
+    /*left: 35%;*/
+/*}*/
+
+.product_item_btn{
+
+}
+
+.panel{
+    background-color: rgba(211, 104, 104, 0.04);
 }

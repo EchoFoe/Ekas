@@ -710,5 +710,1518 @@
                 }
             </script>
     </div>
+<div class="container">
+        <div class="row">
+            <div class="container">
+            <h1 class="text-center">Опросные листы для заказа котельных различных типов</h1>
+                <br>
+                <hr>
+                <h2 class="text-center">Для того чтобы рассчитать стоимость комплекса необходимых услуг
+                    или преобрести котельную под ключ, заполните опросный лист.</h2>
+                <h2 class="text-center">Опросные листы представлены ниже.</h2>
+            <p><strong>Формы для опросных листов:</strong> Выберите тип интересующей Вас
+            <strong>котельной. После заполнения всех форм с Вами свяжется наш сотрудник.</strong></p>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Опросный лист для комбинированной котельной</a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="">
+                                        <form action="#" method="post">{% csrf_token %}
+                                            <div class="form-group row">
+                                                <label for="" class="col-sm-4 col-form-label">
+                                                    Наименование организации заказчика:</label>
+                                                <div class="col-xs-6">
+                                                    <input type="tel" name="{{ form.name.name }}"
+                                                           class="form-control" id="" value="{{ request.POST.name }}"
+                                                       placeholder="Введите наименование Вашей организации...">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="" class="col-sm-4 col-form-label">
+                                                    Электронная почта:</label>
+                                                <div class="col-xs-6">
+                                                    <input type="email" name="{{ form.email.name }}"
+                                                           class="form-control" id="" value="{{ request.POST.email }}"
+                                                       placeholder="Введите электронную почту...">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="" class="col-sm-4 col-form-label">Телефон:</label>
+                                                <div class="col-xs-4">
+                                                    <input type="" name="{{ form.customer_phone.name }}"
+                                                          value="{{ request.POST.customer_phone }}" class="form-control" id=""
+                                                       placeholder="Введите Ваш номер телефона...">
+                                                </div>
+                                            </div>
+                                            <br><br>
+                                            <div class="form-group row">
+                                                <div class="col-sm-4">Требуемые виды работ:</div>
+                                                <div class="col-sm-offset-0">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                        <label class="form-check-label" for="gridCheck1">Проектирование</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-offset-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck2">
+                                                        <label class="form-check-label" for="gridCheck2">Изготовление</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-offset-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck3">
+                                                        <label class="form-check-label" for="gridCheck3">Монтаж на объекте</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-offset-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck4">
+                                                        <label class="form-check-label" for="gridCheck4">Пусконаладочные работы</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-offset-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck5">
+                                                        <label class="form-check-label" for="gridCheck5">Сервисное обслуживание</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br><br>
+                                            <div class="form-group row">
+                                                <div class="col-sm-4">Назначение котельной:</div>
+                                                <div class="col-sm-offset-0">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck6">
+                                                        <label class="form-check-label" for="gridCheck6">Паровая (технология)</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-offset-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck7">
+                                                        <label class="form-check-label" for="gridCheck7">Паровая (технология + отопление + ГВС)</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-offset-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck8">
+                                                        <label class="form-check-label" for="gridCheck8">
+                                                        Паровая (отопление)
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-offset-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck9">
+                                                        <label class="form-check-label" for="gridCheck9">
+                                                        Пароводогрейная (технология + отопление + ГВС)
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br><br>
+                                            <div class="form-group row">
+                                                <div class="col-sm-4">Тип котельной:</div>
+                                                <div class="col-sm-offset-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck10">
+                                                        <label class="form-check-label" for="gridCheck10">
+                                                        Блочно модульная
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-offset-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck11">
+                                                        <label class="form-check-label" for="gridCheck11">
+                                                        Передвижная
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-offset-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck12">
+                                                        <label class="form-check-label" for="gridCheck12">
+                                                        Отдельно стоящая (ЛМК)
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-offset-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck13">
+                                                        <label class="form-check-label" for="gridCheck13">
+                                                        Пристенная
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br><br>
+                                            <div class="form-group row">
+                                                <label for="" class="col-sm-4 col-form-label">Вид основного топлива:</label>
+                                                <div class="col-xs-4">
+                                                    <input type="" class="form-control" id=""
+                                                       placeholder="Введите вид основного топлива...">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="" class="col-sm-4 col-form-label">Вид резервного топлива:</label>
+                                                <div class="col-sm-4">
+                                                <input type="" class="form-control" id=""
+                                                       placeholder="Введите резервного топлива...">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="" class="col-sm-4 col-form-label">Общая производительность:</label>
+                                                <div class="col-sm-6">
+                                                <input type="" class="form-control" id=""
+                                                       placeholder="Укажите тип и мощность котлов...">
+                                                </div>
+                                            </div>
+                                            <br><br>
+                                            <div class="form-group row">
+                                                <label for="" class="col-sm-2 col-form-label">Расчетная нагрузка, т.пара/час (МВт):</label>
+                                                <div class="col-xs-2">
+                                                <input type="" class="form-control" id="" placeholder="Общая...">
+                                                </div>
+                                                <div class="col-xs-2">
+                                                <input type="" class="form-control" id="" placeholder="На технологию...">
+                                                </div>
+                                                <div class="col-xs-2">
+                                                <input type="" class="form-control" id="" placeholder="На отопление...">
+                                                </div>
+                                                <div class="col-xs-2">
+                                                <input type="" class="form-control" id="" placeholder="На вентиляцию...">
+                                                </div>
+                                                <div class="col-xs-1">
+                                                <input type="" class="form-control" id="" placeholder="На ГВС...">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-2">Кол-во контуров котельной:</div>
+                                                <div class="col-sm-offset-0">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck14">
+                                                        <label class="form-check-label" for="gridCheck14">
+                                                        Один
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-offset-0">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck15">
+                                                        <label class="form-check-label" for="gridCheck15">
+                                                        Два
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br><br>
+                                            <div class="form-group row">
+                                                <label for="" class="col-sm-2 col-form-label">Температура пара, °C:</label>
+                                                <div class="col-xs-2">
+                                                <input type="" class="form-control" id="" placeholder="">
+                                                </div>
+                                                <label for="" class="col-sm-2 col-form-label">Давление пара, кг/см²:</label>
+                                                <div class="col-xs-2">
+                                                <input type="" class="form-control" id="" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="" class="col-sm-2 col-form-label">Требуемое кол-во паровых котлов, шт.:</label>
+                                                <div class="col-xs-2">
+                                                <input type="" class="form-control" id="" placeholder="">
+                                                </div>
+                                                <label for="" class="col-sm-2 col-form-label">Единичная мощность паровых котлов, т.пара/час (МВт):</label>
+                                                <div class="col-xs-2">
+                                                <input type="" class="form-control" id="" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="" class="col-sm-2 col-form-label">Требуемое кол-во водогрейных котлов, шт.:</label>
+                                                <div class="col-xs-2">
+                                                <input type="" class="form-control" id="" placeholder="">
+                                                </div>
+                                                <label for="" class="col-sm-2 col-form-label">Единичная мощность водогрейных котлов, (МВт):</label>
+                                                <div class="col-xs-2">
+                                                <input type="" class="form-control" id="" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="" class="col-sm-2 col-form-label">Давление прямой воды, МПа:</label>
+                                                <div class="col-xs-2">
+                                                <input type="" class="form-control" id="" placeholder="">
+                                                </div>
+                                                <label for="" class="col-sm-2 col-form-label">Давление обратной воды, МПа:</label>
+                                                <div class="col-xs-2">
+                                                <input type="" class="form-control" id="" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="" class="col-sm-2 col-form-label">Температура прямой воды, °C:</label>
+                                                <div class="col-xs-2">
+                                                <input type="" class="form-control" id="" placeholder="">
+                                                </div>
+                                                <label for="" class="col-sm-2 col-form-label">Температура обратной воды, °C:</label>
+                                                <div class="col-xs-2">
+                                                <input type="" class="form-control" id="" placeholder="">
+                                                </div>
+                                            </div>
+                                            <br><br>
+                                            <div class="form-group row">
+                                                <div class="col-sm-2">Экономайзер:</div>
+                                                <div class="col-sm-offset-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck16">
+                                                        <label class="form-check-label" for="gridCheck16">Да</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-offset-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck17">
+                                                        <label class="form-check-label" for="gridCheck17">Нет</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2">Деаэратор:</div>
+                                                <div class="col-sm-offset-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck18">
+                                                        <label class="form-check-label" for="gridCheck18">Да</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-offset-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck19">
+                                                        <label class="form-check-label" for="gridCheck19">Нет</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br><br>
+                                            <div class="form-group row">
+                                                <h3 class="text-center">Параметры исходной воды</h3>
+                                                <br><br>
+                                                <label for="inputEmail3" class="col-sm-2 col-form-label">Жесткость, мг-экв/л:</label>
+                                                <div class="col-xs-2">
+                                                    <input type="email" class="form-control" id="inputEmail3"
+                                                       placeholder="Жесткость...">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputEmail3" class="col-sm-2 col-form-label">Щелочность, мг-экв/л:</label>
+                                                <div class="col-xs-2">
+                                                    <input type="email" class="form-control" id="inputEmail3"
+                                                       placeholder="Щелочность...">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputEmail3" class="col-sm-2 col-form-label">Водородный показатель, Ph:</label>
+                                                <div class="col-xs-2">
+                                                    <input type="email" class="form-control" id="inputEmail3"
+                                                       placeholder="Ph...">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputEmail3" class="col-sm-2 col-form-label">Содержание железа, мг/кг:</label>
+                                                <div class="col-xs-2">
+                                                    <input type="email" class="form-control" id="inputEmail3"
+                                                       placeholder="Железо...">
+                                                </div>
+                                            </div>
+                                            <br><br>
+                                            <div class="form-group row">
+                                                <label for="inputEmail3" class="col-sm-4 col-form-label">Давление холодной воды в
+                                                    водопроводной сети, кгс/см²:</label>
+                                                    <div class="col-xs-2">
+                                                        <input type="email" class="form-control" id="inputEmail3"
+                                                           placeholder="">
+                                                    </div>
+                                            </div>
+                                            <div class="form-group row">
+                                            <br><br>
+                                                <label for="inputEmail3" class="col-sm-4 col-form-label">Температура холодной воды в
+                                                    водопроводной сети, °C:</label>
+                                                    <div class="col-xs-2">
+                                                        <input type="email" class="form-control" id="inputEmail3"
+                                                           placeholder="">
+                                                    </div>
+                                            </div>
+                                        <br>
+                                        <div class="form-group row">
+                                            <div class="col-sm-4">Водоподготовка:</div>
+                                            <div class="col-sm-offset-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck20">
+                                                    <label class="form-check-label" for="gridCheck20">
+                                                    Фильтрация
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck21">
+                                                    <label class="form-check-label" for="gridCheck21">
+                                                    Обезжелезивание
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck22">
+                                                    <label class="form-check-label" for="gridCheck22">
+                                                    Умягчение
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck23">
+                                                    <label class="form-check-label" for="gridCheck23">
+                                                    Химическая деаэрация
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-4 col-form-label">Удаленность
+                                                объектов от котельной, м:</label>
+                                            <div class="col-xs-2">
+                                                <input type="email" class="form-control" id="inputEmail3"
+                                                   placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-4 col-form-label">Давление газа во
+                                                входящем газопроводе, КПа:</label>
+                                            <div class="col-xs-2">
+                                                <input type="email" class="form-control" id="inputEmail3"
+                                                   placeholder="">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-group row">
+                                            <div class="col-sm-4">Необходимость газораспределительного оборудования:</div>
+                                            <div class="col-sm-offset-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck24">
+                                                    <label class="form-check-label" for="gridCheck24">
+                                                    ГРУ
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck25">
+                                                    <label class="form-check-label" for="gridCheck25">
+                                                    ГРП, ГРПШ
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-group row">
+                                            <div class="col-sm-4">Узлы учета:</div>
+                                            <div class="col-sm-offset-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck26">
+                                                    <label class="form-check-label" for="gridCheck26">
+                                                    Газа
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck27">
+                                                    <label class="form-check-label" for="gridCheck27">
+                                                    Холодной воды
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck28">
+                                                    <label class="form-check-label" for="gridCheck28">
+                                                    Электроэнергии
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck29">
+                                                    <label class="form-check-label" for="gridCheck29">
+                                                    Пара
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck30">
+                                                    <label class="form-check-label" for="gridCheck30">
+                                                    Дизельного топлива
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-group row">
+                                            <div class="col-sm-4">Диспетчеризация:</div>
+                                            <div class="col-sm-offset-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck31">
+                                                    <label class="form-check-label" for="gridCheck31">
+                                                    Автоматизированная с обслуживающими персоналом (со вспомогательными помещениями)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck32">
+                                                    <label class="form-check-label" for="gridCheck32">
+                                                    Автоматизированная без постоянного обслуживающего персонала через GSM
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck33">
+                                                    <label class="form-check-label" for="gridCheck33">
+                                                    Автоматизированная с ситемой диспетчеризации
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-group row">
+                                            <div class="col-sm-4">Необходимость дымовой трубы:</div>
+                                            <div class="col-sm-offset-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck34">
+                                                    <label class="form-check-label" for="gridCheck34">
+                                                    Да, одна все котлы
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck35">
+                                                    <label class="form-check-label" for="gridCheck35">
+                                                    Да, разные на все котлы
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck36">
+                                                    <label class="form-check-label" for="gridCheck36">
+                                                    Нет
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-4 col-form-label">Опросный лист заполнил, ФИО:</label>
+                                            <div class="col-xs-6">
+                                                <input type="" class="form-control" id=""
+                                                   placeholder="Введите свои ФИО...">
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                        <div class="form-group row">
+                                            <div class="col-sm-10">
+                                                <button type="submit" class="btn btn-primary">Отправить</button>
+                                            </div>
+                                        </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion"
+                       href="#collapse2">Опросный лист паровой котельной</a></h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="">
+                                    <form action="#" method="post">{% csrf_token %}
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-4 col-form-label">
+                                                Наименование организации заказчика:</label>
+                                            <div class="col-xs-6">
+                                                <input type="tel" name="{{ form.name.name }}"
+                                                       class="form-control" id="" value="{{ request.POST.name }}"
+                                                   placeholder="Введите наименование Вашей организации...">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-4 col-form-label">
+                                                Электронная почта:</label>
+                                            <div class="col-xs-6">
+                                                <input type="email" name="{{ form.email.name }}"
+                                                       class="form-control" id="" value="{{ request.POST.email }}"
+                                                   placeholder="Введите электронную почту...">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-4 col-form-label">Телефон:</label>
+                                            <div class="col-xs-4">
+                                                <input type="" name="{{ form.customer_phone.name }}"
+                                                      value="{{ request.POST.customer_phone }}" class="form-control" id=""
+                                                   placeholder="Введите Ваш номер телефона...">
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                        <div class="form-group row">
+                                            <div class="col-sm-4">Требуемые виды работ:</div>
+                                            <div class="col-sm-offset-0">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck37">
+                                                    <label class="form-check-label" for="gridCheck37">Проектирование</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck38">
+                                                    <label class="form-check-label" for="gridCheck38">Изготовление</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck39">
+                                                    <label class="form-check-label" for="gridCheck39">Монтаж на объекте</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck40">
+                                                    <label class="form-check-label" for="gridCheck40">Пусконаладочные работы</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck41">
+                                                    <label class="form-check-label" for="gridCheck41">Сервисное обслуживание</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                        <div class="form-group row">
+                                            <div class="col-sm-4">Назначение котельной:</div>
+                                            <div class="col-sm-offset-0">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck42">
+                                                    <label class="form-check-label" for="gridCheck42">Паровая (технология)</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck43">
+                                                    <label class="form-check-label" for="gridCheck44">Паровая (технология + отопление + ГВС)</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck45">
+                                                    <label class="form-check-label" for="gridCheck45">
+                                                    Паровая (отопление)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                        <div class="form-group row">
+                                            <div class="col-sm-4">Тип котельной:</div>
+                                            <div class="col-sm-offset-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck46">
+                                                    <label class="form-check-label" for="gridCheck46">
+                                                    Блочно модульная
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck47">
+                                                    <label class="form-check-label" for="gridCheck47">
+                                                    Передвижная
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck48">
+                                                    <label class="form-check-label" for="gridCheck48">
+                                                    Отдельно стоящая (ЛМК)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck49">
+                                                    <label class="form-check-label" for="gridCheck49">
+                                                    Пристенная
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-4 col-form-label">Вид основного топлива:</label>
+                                            <div class="col-xs-4">
+                                                <input type="" class="form-control" id=""
+                                                   placeholder="Введите вид основного топлива...">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-4 col-form-label">Вид резервного топлива:</label>
+                                            <div class="col-sm-4">
+                                            <input type="" class="form-control" id=""
+                                                   placeholder="Введите резервного топлива...">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-4 col-form-label">Общая производительность:</label>
+                                            <div class="col-sm-6">
+                                            <input type="" class="form-control" id=""
+                                                   placeholder="Укажите тип и мощность котлов...">
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-2 col-form-label">Расчетная нагрузка, т.пара/час (МВт):</label>
+                                            <div class="col-xs-2">
+                                            <input type="" class="form-control" id="" placeholder="Общая...">
+                                            </div>
+                                            <div class="col-xs-2">
+                                            <input type="" class="form-control" id="" placeholder="На технологию...">
+                                            </div>
+                                            <div class="col-xs-2">
+                                            <input type="" class="form-control" id="" placeholder="На отопление...">
+                                            </div>
+                                            <div class="col-xs-2">
+                                            <input type="" class="form-control" id="" placeholder="На вентиляцию...">
+                                            </div>
+                                            <div class="col-xs-1">
+                                            <input type="" class="form-control" id="" placeholder="На ГВС...">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-2">Кол-во контуров котельной:</div>
+                                            <div class="col-sm-offset-0">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck50">
+                                                    <label class="form-check-label" for="gridCheck50">
+                                                    Один
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-0">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck51">
+                                                    <label class="form-check-label" for="gridCheck51">
+                                                    Два
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-2 col-form-label">Температура пара, °C:</label>
+                                            <div class="col-xs-2">
+                                            <input type="" class="form-control" id="" placeholder="">
+                                            </div>
+                                            <label for="" class="col-sm-2 col-form-label">Давление пара, кг/см²:</label>
+                                            <div class="col-xs-2">
+                                            <input type="" class="form-control" id="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-2 col-form-label">Требуемое кол-во паровых котлов, шт.:</label>
+                                            <div class="col-xs-2">
+                                            <input type="" class="form-control" id="" placeholder="">
+                                            </div>
+                                            <label for="" class="col-sm-2 col-form-label">Единичная мощность паровых котлов, т.пара/час (МВт):</label>
+                                            <div class="col-xs-2">
+                                            <input type="" class="form-control" id="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-2 col-form-label">Давление прямой воды, МПа:</label>
+                                            <div class="col-xs-2">
+                                            <input type="" class="form-control" id="" placeholder="">
+                                            </div>
+                                            <label for="" class="col-sm-2 col-form-label">Давление обратной воды, МПа:</label>
+                                            <div class="col-xs-2">
+                                            <input type="" class="form-control" id="" placeholder="">
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                        <div class="form-group row">
+                                            <div class="col-sm-2">Экономайзер:</div>
+                                            <div class="col-sm-offset-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck52">
+                                                    <label class="form-check-label" for="gridCheck52">Да</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck53">
+                                                    <label class="form-check-label" for="gridCheck53">Нет</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">Деаэратор:</div>
+                                            <div class="col-sm-offset-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck54">
+                                                    <label class="form-check-label" for="gridCheck54">Да</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck55">
+                                                    <label class="form-check-label" for="gridCheck55">Нет</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">Системавозврата и очистки конденсата:</div>
+                                            <div class="col-sm-offset-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck564">
+                                                    <label class="form-check-label" for="gridCheck56">Да</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-offset-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck57">
+                                                    <label class="form-check-label" for="gridCheck57">Нет</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                        <div class="form-group row">
+                                            <h3 class="text-center">Параметры исходной воды</h3>
+                                            <br><br>
+                                            <label for="" class="col-sm-2 col-form-label">Жесткость, мг-экв/л:</label>
+                                            <div class="col-xs-2">
+                                                <input type="" class="form-control" id=""
+                                                   placeholder="Жесткость...">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-2 col-form-label">Щелочность, мг-экв/л:</label>
+                                            <div class="col-xs-2">
+                                                <input type="" class="form-control" id=""
+                                                   placeholder="Щелочность...">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="" class="col-sm-2 col-form-label">Водородный показатель, Ph:</label>
+                                            <div class="col-xs-2">
+                                                <input type="" class="form-control" id=""
+                                                   placeholder="Ph...">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Содержание железа, мг/кг:</label>
+                                            <div class="col-xs-2">
+                                                <input type="" class="form-control" id=""
+                                                   placeholder="Железо...">
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-4 col-form-label">Давление холодной воды в
+                                                водопроводной сети, кгс/см²:</label>
+                                                <div class="col-xs-2">
+                                                    <input type="" class="form-control" id=""
+                                                       placeholder="">
+                                                </div>
+                                        </div>
+                                        <div class="form-group row">
+                                        <br><br>
+                                            <label for="" class="col-sm-4 col-form-label">Температура холодной воды в
+                                                водопроводной сети, °C:</label>
+                                                <div class="col-xs-2">
+                                                    <input type="" class="form-control" id=""
+                                                       placeholder="">
+                                                </div>
+                                        </div>
+                                    <br>
+                                    <div class="form-group row">
+                                        <div class="col-sm-4">Водоподготовка:</div>
+                                        <div class="col-sm-offset-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck58">
+                                                <label class="form-check-label" for="gridCheck58">
+                                                Фильтрация
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-offset-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck59">
+                                                <label class="form-check-label" for="gridCheck59">
+                                                Обезжелезивание
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-offset-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck60">
+                                                <label class="form-check-label" for="gridCheck60">
+                                                Умягчение
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-offset-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck61">
+                                                <label class="form-check-label" for="gridCheck61">
+                                                Химическая деаэрация
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <div class="form-group row">
+                                        <label for="" class="col-sm-4 col-form-label">Удаленность
+                                            объектов от котельной, м:</label>
+                                        <div class="col-xs-2">
+                                            <input type="" class="form-control" id=""
+                                               placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="" class="col-sm-4 col-form-label">Давление газа во
+                                            входящем газопроводе, КПа:</label>
+                                        <div class="col-xs-2">
+                                            <input type="" class="form-control" id=""
+                                               placeholder="">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="form-group row">
+                                        <div class="col-sm-4">Необходимость газораспределительного оборудования:</div>
+                                        <div class="col-sm-offset-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck62">
+                                                <label class="form-check-label" for="gridCheck62">
+                                                ГРУ
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-offset-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck63">
+                                                <label class="form-check-label" for="gridCheck63">
+                                                ГРП, ГРПШ
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="form-group row">
+                                        <div class="col-sm-4">Узлы учета:</div>
+                                        <div class="col-sm-offset-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck64">
+                                                <label class="form-check-label" for="gridCheck64">
+                                                Газа
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-offset-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck65">
+                                                <label class="form-check-label" for="gridCheck65">
+                                                Холодной воды
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-offset-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck66">
+                                                <label class="form-check-label" for="gridCheck66">
+                                                Электроэнергии
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-offset-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck67">
+                                                <label class="form-check-label" for="gridCheck67">
+                                                Пара
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-offset-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck68">
+                                                <label class="form-check-label" for="gridCheck68">
+                                                Дизельного топлива
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="form-group row">
+                                        <div class="col-sm-4">Диспетчеризация:</div>
+                                        <div class="col-sm-offset-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck69">
+                                                <label class="form-check-label" for="gridCheck69">
+                                                Автоматизированная с обслуживающими персоналом (со вспомогательными помещениями)
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-offset-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck70">
+                                                <label class="form-check-label" for="gridCheck70">
+                                                Автоматизированная без постоянного обслуживающего персонала через GSM
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-offset-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck71">
+                                                <label class="form-check-label" for="gridCheck71">
+                                                Автоматизированная с системой диспетчеризации
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="form-group row">
+                                        <div class="col-sm-4">Необходимость дымовой трубы:</div>
+                                        <div class="col-sm-offset-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck72">
+                                                <label class="form-check-label" for="gridCheck72">
+                                                Да, одна все котлы
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-offset-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck73">
+                                                <label class="form-check-label" for="gridCheck73">
+                                                Да, разные на все котлы
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-offset-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck74">
+                                                <label class="form-check-label" for="gridCheck74">
+                                                Нет
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <div class="form-group row">
+                                        <label for="" class="col-sm-4 col-form-label">Опросный лист заполнил, ФИО:</label>
+                                        <div class="col-xs-6">
+                                            <input type="" class="form-control" id=""
+                                               placeholder="Введите свои ФИО...">
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <div class="form-group row">
+                                        <div class="col-sm-10">
+                                            <button type="submit" class="btn btn-primary">Отправить</button>
+                                        </div>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="panel panel-default">
+        <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Опросный лист для водогрейной котельной</a>
+        </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="">
+                            <form action="#" method="post">{% csrf_token %}
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-4 col-form-label">
+                                        Наименование организации заказчика:</label>
+                                    <div class="col-xs-6">
+                                        <input type="tel" name="{{ form.name.name }}"
+                                               class="form-control" id="" value="{{ request.POST.name }}"
+                                           placeholder="Введите наименование Вашей организации...">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-4 col-form-label">
+                                        Электронная почта:</label>
+                                    <div class="col-xs-6">
+                                        <input type="email" name="{{ form.email.name }}"
+                                               class="form-control" id="" value="{{ request.POST.email }}"
+                                           placeholder="Введите электронную почту...">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-4 col-form-label">Телефон:</label>
+                                    <div class="col-xs-4">
+                                        <input type="" name="{{ form.customer_phone.name }}"
+                                              value="{{ request.POST.customer_phone }}" class="form-control" id=""
+                                           placeholder="Введите Ваш номер телефона...">
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="form-group row">
+                                    <div class="col-sm-4">Требуемые виды работ:</div>
+                                    <div class="col-sm-offset-0">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck75">
+                                            <label class="form-check-label" for="gridCheck75">Проектирование</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-offset-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck38">
+                                            <label class="form-check-label" for="gridCheck38">Изготовление</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-offset-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck76">
+                                            <label class="form-check-label" for="gridCheck76">Монтаж на объекте</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-offset-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck77">
+                                            <label class="form-check-label" for="gridCheck77">Пусконаладочные работы</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-offset-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck78">
+                                            <label class="form-check-label" for="gridCheck78">Сервисное обслуживание</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <br><br>
+                                <div class="form-group row">
+                                    <div class="col-sm-4">Тип котельной:</div>
+                                    <div class="col-sm-offset-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck79">
+                                            <label class="form-check-label" for="gridCheck79">
+                                            Блочно модульная
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-offset-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck80">
+                                            <label class="form-check-label" for="gridCheck80">
+                                            Передвижная
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-offset-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck81">
+                                            <label class="form-check-label" for="gridCheck81">
+                                            Отдельно стоящая (ЛМК)
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-offset-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck82">
+                                            <label class="form-check-label" for="gridCheck82">
+                                            Пристенная
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-offset-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck83">
+                                            <label class="form-check-label" for="gridCheck83">
+                                            Крышная
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-offset-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck84">
+                                            <label class="form-check-label" for="gridCheck84">
+                                            Капитальная
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-offset-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck85">
+                                            <label class="form-check-label" for="gridCheck85">
+                                            Реконструируемая
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-4 col-form-label">Вид основного топлива:</label>
+                                    <div class="col-xs-4">
+                                        <input type="" class="form-control" id=""
+                                           placeholder="Введите вид основного топлива...">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-4 col-form-label">Вид резервного топлива:</label>
+                                    <div class="col-sm-4">
+                                    <input type="" class="form-control" id=""
+                                           placeholder="Введите резервного топлива...">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-4 col-form-label">Общая производительность:</label>
+                                    <div class="col-sm-6">
+                                    <input type="" class="form-control" id=""
+                                           placeholder="Укажите тип и мощность котлов...">
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-2 col-form-label">Расчетная нагрузка, т.пара/час (МВт):</label>
+                                    <div class="col-xs-2">
+                                    <input type="" class="form-control" id="" placeholder="На отопление...">
+                                    </div>
+                                    <div class="col-xs-2">
+                                    <input type="" class="form-control" id="" placeholder="На вентиляцию...">
+                                    </div>
+                                    <div class="col-xs-2">
+                                    <input type="" class="form-control" id="" placeholder="На отопление...">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-2">Кол-во контуров котельной:</div>
+                                    <div class="col-sm-offset-0">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck86">
+                                            <label class="form-check-label" for="gridCheck86">
+                                            Один
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-offset-0">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck87">
+                                            <label class="form-check-label" for="gridCheck87">
+                                            Два
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-2 col-form-label">Температура прямой воды, °C:</label>
+                                    <div class="col-xs-2">
+                                    <input type="" class="form-control" id="" placeholder="">
+                                    </div>
+                                    <label for="" class="col-sm-2 col-form-label">Тепература обратной воды, °C:</label>
+                                    <div class="col-xs-2">
+                                    <input type="" class="form-control" id="" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-2 col-form-label">Требуемое кол-во котлов, шт.:</label>
+                                    <div class="col-xs-2">
+                                    <input type="" class="form-control" id="" placeholder="">
+                                    </div>
+                                    <label for="" class="col-sm-2 col-form-label">Единичная мощность котлов, т.пара/час (МВт):</label>
+                                    <div class="col-xs-2">
+                                    <input type="" class="form-control" id="" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-2 col-form-label">Давление прямой воды, МПа:</label>
+                                    <div class="col-xs-2">
+                                    <input type="" class="form-control" id="" placeholder="">
+                                    </div>
+                                    <label for="" class="col-sm-2 col-form-label">Давление обратной воды, МПа:</label>
+                                    <div class="col-xs-2">
+                                    <input type="" class="form-control" id="" placeholder="">
+                                    </div>
+                                </div>
+                                <br><br>
+                                <br><br>
+                                <div class="form-group row">
+                                    <h3 class="text-center">Параметры исходной воды</h3>
+                                    <br><br>
+                                    <label for="" class="col-sm-2 col-form-label">Жесткость, мг-экв/л:</label>
+                                    <div class="col-xs-2">
+                                        <input type="" class="form-control" id=""
+                                           placeholder="Жесткость...">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-2 col-form-label">Щелочность, мг-экв/л:</label>
+                                    <div class="col-xs-2">
+                                        <input type="" class="form-control" id=""
+                                           placeholder="Щелочность...">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-2 col-form-label">Водородный показатель, Ph:</label>
+                                    <div class="col-xs-2">
+                                        <input type="" class="form-control" id=""
+                                           placeholder="Ph...">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Содержание железа, мг/кг:</label>
+                                    <div class="col-xs-2">
+                                        <input type="" class="form-control" id=""
+                                           placeholder="Железо...">
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="form-group row">
+                                    <label for="inputEmail3" class="col-sm-4 col-form-label">Давление холодной воды в
+                                        водопроводной сети, кгс/см²:</label>
+                                        <div class="col-xs-2">
+                                            <input type="" class="form-control" id=""
+                                               placeholder="">
+                                        </div>
+                                </div>
+                                <div class="form-group row">
+                                <br><br>
+                                    <label for="" class="col-sm-4 col-form-label">Температура холодной воды в
+                                        водопроводной сети, °C:</label>
+                                        <div class="col-xs-2">
+                                            <input type="" class="form-control" id=""
+                                               placeholder="">
+                                        </div>
+                                </div>
+                            <br>
+                            <div class="form-group row">
+                                <div class="col-sm-4">Водоподготовка:</div>
+                                <div class="col-sm-offset-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck101">
+                                        <label class="form-check-label" for="gridCheck101">
+                                        Фильтрация
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-offset-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck102">
+                                        <label class="form-check-label" for="gridCheck102">
+                                        Обезжелезивание
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-offset-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck103">
+                                        <label class="form-check-label" for="gridCheck103">
+                                        Умягчение
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-offset-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck104">
+                                        <label class="form-check-label" for="gridCheck104">
+                                        Химическая деаэрация
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-4 col-form-label">Удаленность
+                                    объектов от котельной, м:</label>
+                                <div class="col-xs-2">
+                                    <input type="" class="form-control" id=""
+                                       placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-4 col-form-label">Давление газа во
+                                    входящем газопроводе, КПа:</label>
+                                <div class="col-xs-2">
+                                    <input type="" class="form-control" id=""
+                                       placeholder="">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group row">
+                                <div class="col-sm-4">Необходимость газораспределительного оборудования:</div>
+                                <div class="col-sm-offset-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck105">
+                                        <label class="form-check-label" for="gridCheck105">
+                                        ГРУ
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-offset-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck106">
+                                        <label class="form-check-label" for="gridCheck106">
+                                        ГРП, ГРПШ
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group row">
+                                <div class="col-sm-4">Узлы учета:</div>
+                                <div class="col-sm-offset-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck107">
+                                        <label class="form-check-label" for="gridCheck107">
+                                        Газа
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-offset-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck108">
+                                        <label class="form-check-label" for="gridCheck108">
+                                        Холодной воды
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-offset-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck109">
+                                        <label class="form-check-label" for="gridCheck109">
+                                        Электроэнергии
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-offset-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck110">
+                                        <label class="form-check-label" for="gridCheck110">
+                                        Пара
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-offset-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck111">
+                                        <label class="form-check-label" for="gridCheck111">
+                                        Дизельного топлива
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group row">
+                                <div class="col-sm-4">Диспетчеризация:</div>
+                                <div class="col-sm-offset-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck112">
+                                        <label class="form-check-label" for="gridCheck112">
+                                        Автоматизированная с обслуживающими персоналом (со вспомогательными помещениями)
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-offset-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck113">
+                                        <label class="form-check-label" for="gridCheck113">
+                                        Автоматизированная без постоянного обслуживающего персонала через GSM
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-offset-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck114">
+                                        <label class="form-check-label" for="gridCheck114">
+                                        Автоматизированная с системой диспетчеризации
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group row">
+                                <div class="col-sm-4">Необходимость дымовой трубы:</div>
+                                <div class="col-sm-offset-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck115">
+                                        <label class="form-check-label" for="gridCheck115">
+                                        Да, одна все котлы
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-offset-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck116">
+                                        <label class="form-check-label" for="gridCheck116">
+                                        Да, разные на все котлы
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-offset-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck117">
+                                        <label class="form-check-label" for="gridCheck117">
+                                        Нет
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-4 col-form-label">Опросный лист заполнил, ФИО:</label>
+                                <div class="col-xs-6">
+                                    <input type="" class="form-control" id=""
+                                       placeholder="Введите свои ФИО...">
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="form-group row">
+                                <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-primary">Отправить</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <br><br>
+        </div>
+</form>
+</div>
 </div>
 {% endblock %}

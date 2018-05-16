@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div id="apartments">
+    <div class="container">
+        <div class="row">
+            <br>
+            <h1 class="text-center">Предлагаем Вашему вниманию <strong>недвижимость</strong> в многоквартирном жилом доме,
+                расположенном по адресу:</h1>
+                <h2><strong>Курская область, Мантуровский р-н, с. Сейм, ул. Школьная, д.7</strong></h2>
+                <br>
+{#                <p class="">#}
+{#                    <br><br>#}
+{#                    <img src="{% static 'img/headerwrape.jpg' %}" alt="...">#}
+{#                </p>#}
+                <hr>
+                <h2 class="text-center">Вы можете ознакомиться с планировкой дома и квартир в нем.</h2>
+                <h2 class="text-center">Так же представлены экспликации для каждой из квартир.</h2>
+    {#            <p class="text-center"><strong>Ниже представлены квартиры</strong></p>#}
+            <h2><i class="fa fa-envelope-o" aria-hidden="true"></i> По всем вопросам и предложениям, связанными с недвижимостью,
+                пожалуйста, высылайте на электронный адрес:</h2>
+                <br>
+                <h2 class="tilt1 text-center">ekas_group@mail.ru</h2>
+                <br>
+        </div>
+    </div>
+</div>
+
+    <div class="panel-group" id="col1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="text-center">
+                    <a data-toggle="collapse" data-parent="#col1" href="#collapse4">Двухкомнатные квартиры:</a>
+                </h1>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="section_apartment2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="">
+                                    {% for  product_image in  products_images_1  %}
+                                        {% include 'Subscribers/product_item.html' %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="panel-group" id="col2">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="text-center">
+                    <a data-toggle="collapse" data-parent="#col2" href="#collapse5">Трехкомнатные квартиры:</a>
+                </h1>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="section_apartment3">
+                        <div class="container">
+                            <div class="row">
+                            {% for  product_image in  products_images_2  %}
+                                {% include 'Subscribers/product_item.html' %}
+                            {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

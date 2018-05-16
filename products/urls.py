@@ -14,27 +14,17 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from . import views, forms
+from products import views
 from django.conf.urls.static import static
 from django.conf import settings
 
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^Subscribers/$', views.Subscriber, name='Subscriber'),
-    url(r'^about_us/$', views.about_us, name='about_us'),
-    url(r'^doci/$', views.doci, name='doci'),
-    url(r'oprosnoi_list/$', views.oprosnoi_list, name='oprosnoi_list'),
-    url(r'ekspertiza/$', views.ekspertiza, name='ekspertiza'),
-    url(r'BMK/$', views.BMK, name='BMK'),
-    url(r'proektirovanie/$', views.proektirovanie, name='proektirovanie'),
-    url(r'kipia/$', views.kipia, name='kipia'),
-    url(r'kotli/$', views.kotli, name='kotli'),
-    url(r'^kvartiri/$', views.kvartiri, name='kvartiri'),
+    # url(r'^landing/', views.landing, name='landing'),
+    url(r'^kvartiri_(?P<product_id>\w+)/$', views.product, name='product'),
 
-    url(r'^$', views.home, name='home'),
-
-    # url(r'templates/$', views.Subscriber, name='templates'),
+    # url(r'^products/$', views.download_products, name='download_products'),
 ]\
               + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
               + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

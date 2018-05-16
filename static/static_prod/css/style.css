@@ -1230,3 +1230,40 @@ img {
     color: rgba(0, 0, 0, 0.91);
     cursor: default;
 }
+
+.product-description-tabs{
+    padding: 10px;
+}
+/*Стили секции для продукта*/
+.product-item{
+    height: 800px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    position: relative;
+    padding: 10px 0 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*Стили для секции для картинки*/
+.product-image-item{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+/*Стили для контейнера-продуктов*/
+.container-product{
+    margin: 100px;
+}
+
+/*Стили кнопки добавить в корзину*/
+.add-to-cart-btn{
+    position: absolute;
+    bottom: 15px;
+    left: 35%;
+}
+
+.product_item_btn{
+
+}

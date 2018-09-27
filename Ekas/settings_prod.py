@@ -1,5 +1,5 @@
 DEBUG = False
-ALLOWED_HOSTS = ['138.197.181.89',
+ALLOWED_HOSTS = ['104.248.138.198',
                  '.ekas-org.ru']
 
 
